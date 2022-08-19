@@ -32,6 +32,8 @@ class FullCalendarController extends Controller
  
         switch ($request->type) {
            case 'add':
+            // $st = date('Y-m-d H:i:s', $request->start);
+            // $en = date('Y-m-d H:i:s', $request->end);
               $event = Event::create([
                   'title' => $request->title,
                   'start' => $request->start,
